@@ -1,0 +1,12 @@
+.btn {
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: active-btn-color;
+    background-color: $accent-color;
+  }
+}

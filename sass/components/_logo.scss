@@ -1,0 +1,16 @@
+.logo {
+  @include text(700, 26px, 1.19, null, $accent-color);
+  font-family: $logo-font;
+}
+
+.logo--black {
+  span {
+    color: $logo-dark-color;
+  }
+}
+
+.logo--white {
+  span {
+    color: $logo-light-color;
+  }
+}

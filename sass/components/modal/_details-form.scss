@@ -1,0 +1,74 @@
+.details-form__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.details-form__text {
+  display: block;
+  margin-bottom: 4px;
+
+  @include text(null, 12px, 1.16, 0.01em, $text-color);
+}
+
+.details-form-wrap {
+  position: relative;
+}
+
+.details-form-wrap__input {
+  padding-left: 42px;
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+
+.modal-input {
+  display: block;
+
+  width: 100%;
+  height: 40px;
+
+  @include text(null, 12px, 1.16, 0.01em, $main-color);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: transparent;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.details-form-wrap__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translatey(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .details-form-wrap__input:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.details-form__comment {
+  margin-bottom: 20px;
+}
+
+.details-form__comment-text {
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &::placeholder {
+    @include text(null, 12px, 1.16, 0.01em, rgba(117, 117, 117, 0.5));
+  }
+}
+
+.details-form__btn {
+  margin-top: 30px;
+  min-width: 200px;
+  outline: transparent;
+}

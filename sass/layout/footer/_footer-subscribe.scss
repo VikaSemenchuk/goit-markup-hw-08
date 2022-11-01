@@ -1,0 +1,46 @@
+.subscribe {
+  color: $secondary-main-color;
+}
+
+.subscribe__container {
+  margin-left: auto;
+}
+
+.form__container {
+  display: flex;
+  gap: 12px;
+}
+
+.form__label {
+  width: 358px;
+  height: 50px;
+}
+
+.form__input {
+  padding-left: 16px;
+
+  width: 100%;
+  height: 100%;
+
+  @include text(null, 16px, 1.25, null, $secondary-main-color);
+
+  // outline: transparent;
+
+  background-color: rgba(33, 150, 243, 0);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-width: 200px;
+}
