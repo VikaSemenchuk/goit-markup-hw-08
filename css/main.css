@@ -48,19 +48,42 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    padding: 94px 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -409,22 +432,46 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+}
 .hero__btn {
-  min-width: 216px;
+  width: 200px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    width: 216px;
+  }
 }
 
 .hero__section {
-  padding: 200px 0;
+  padding: 118px 0;
   margin: 0 auto;
   max-width: 1600px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    padding: 200px 0;
+  }
 }
 
 .features-list__title {
