@@ -9,9 +9,14 @@
     font-size: 28px;
     line-height: 1.18;
     // 33px
+  }
+}
 
-    @include desktop {
-      padding: 94px 0;
+@include desktop {
+  .section {
+    padding: 94px 0;
+
+    &__title {
       margin-bottom: 50px;
       font-size: 36px;
       line-height: 1.16;

@@ -1,25 +1,18 @@
-.features-list__title {
-  margin-bottom: 10px;
-  margin-top: 30px;
-
-  @include text(null, 14px, 1.33, null, null);
-
-  text-transform: uppercase;
-}
-
 .features-list,
 .team-list {
-  @extend %aligner;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .features-list__item {
-  max-width: 270px;
-  height: 248px;
+  width: 100%;
 }
 
 .features-list__wrap {
-  @extend %aligner;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   height: 120px;
 
@@ -27,8 +20,35 @@
   border-radius: 4px;
 }
 
+.features-list__title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+  @include text(null, 14px, 1.14, null, null);
+  text-transform: uppercase;
+}
+
 .features-list__text {
   line-height: 1.71;
 
   color: $text-color;
+}
+
+
+@include tablet {
+  .features-list__item {
+    @include calc(2);
+    // width: calc((100% - 30px) / 2);
+  }
+}
+
+
+@include desktop {
+  .features-list__item {
+    max-width: 270px;
+  }
+
+  .features-list__title {
+    @include text(null, 14px, 1.33, null, null);
+  }
 }
