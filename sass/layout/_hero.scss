@@ -1,10 +1,26 @@
 .hero {
   background-color: $secondary-background-color;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
+  background-image: $hero-gradient, url(../images/hero/hero-bg-mob.jpg);
+  @include retina {
+    background-image: url(../images/hero/hero-bg-mob-2x.jpg);
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include tablet {
+    background-image: $hero-gradient, url(../images/hero/hero-bg-tab.jpg);
+    @include retina {
+      background-image: $hero-gradient, url(../images/hero/hero-bg-tab-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: $hero-gradient, url(../images/hero/hero.jpg);
+    @include retina {
+      background-image: $hero-gradient, url(../images/hero/hero-bg-2x.jpg);
+    }
+  }
 
   &__title {
     text-align: center;
@@ -17,7 +33,7 @@
     @include tablet {
       max-width: 360px;
     }
-    
+
     @include desktop {
       max-width: 696px;
       @include text(900, 44px, 1.36, 0.06em, $secondary-main-color);
