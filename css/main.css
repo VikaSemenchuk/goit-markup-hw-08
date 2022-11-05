@@ -423,6 +423,17 @@ body {
   fill: currentColor;
 }
 
+.hero__section {
+  padding: 118px 0;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    padding: 200px 0;
+  }
+}
+
 .hero {
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mob.jpg);
@@ -487,17 +498,6 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__btn {
     width: 216px;
-  }
-}
-
-.hero__section {
-  padding: 118px 0;
-  margin: 0 auto;
-  max-width: 1600px;
-}
-@media screen and (min-width: 1200px) {
-  .hero__section {
-    padding: 200px 0;
   }
 }
 
