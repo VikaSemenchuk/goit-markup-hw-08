@@ -12,8 +12,7 @@
   margin: -1px;
 }
 
-.filter-list, .contacts__link, .header__contacts, .menu,
-.contacts, .navigation, .header__container, .modal__close-btn, .checkbox__text span, .checkbox__text, .social__link,
+.filter-list, .contacts__link, .header__contacts, .navigation, .header__container, .modal__close-btn, .checkbox__text span, .checkbox__text, .social__link,
 .footer-soc-link, .social {
   display: flex;
   align-items: center;
@@ -36,7 +35,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -366,6 +364,29 @@ body {
   outline: transparent;
 }
 
+.menu-mob {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-mob-container {
+  position: relative;
+  width: 100%;
+  padding: 48px 40px;
+  margin: 0 auto;
+}
+
+.menu-mob__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -377,7 +398,7 @@ body {
 
 .menu,
 .contacts {
-  gap: 50px;
+  display: none;
 }
 
 .menu__item {

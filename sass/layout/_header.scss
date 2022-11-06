@@ -1,3 +1,58 @@
+// .menu-mob__open-btn {
+// }
+// .menu-mob__open-icon {
+// }
+.menu-mob {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+.menu-mob-container {
+  position: relative;
+  width: 100%;
+  padding: 48px 40px;
+  margin: 0 auto;
+}
+
+.menu-mob__close-btn {
+  position: absolute;
+  // padding: 0;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+// .menu-mob__close-icon {
+// }
+// .menu-mob__list {
+// }
+// .list {
+// }
+// .menu-mob__item {
+// }
+// .menu-mob__link {
+// }
+// .link {
+// }
+// .current {
+// }
+// .mob-contacts {
+// }
+// .mob-contacts__list {
+// }
+// .mob-contacts__item {
+// }
+// .mob-contacts__link {
+// }
+// .mob-social {
+// }
+// .mob-social__item {
+// }
+// .mob-social__link {
+// }
+
 .header {
   border-bottom: 1px solid $border-color;
 
@@ -19,9 +74,10 @@
 
 .menu,
 .contacts {
-  @extend %aligner;
+  display: none;
+  // @extend %aligner;
 
-  gap: 50px;
+  // gap: 50px;
 }
 
 .menu__item {
