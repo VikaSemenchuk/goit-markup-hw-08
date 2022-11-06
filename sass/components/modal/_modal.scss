@@ -46,10 +46,6 @@
       color: $accent-color;
       border-color: $accent-color;
     }
-
-    .modal__icon-close {
-      fill: currentColor;
-    }
   }
 
   &__title {
@@ -59,3 +55,7 @@
     @include text(700, 20px, 1.15, null, null);
   }
 }
+
+.modal__icon-close {
+      fill: currentColor;
+    }
