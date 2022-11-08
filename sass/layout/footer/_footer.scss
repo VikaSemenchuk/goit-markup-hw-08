@@ -2,21 +2,80 @@
   background-color: $secondary-background-color;
 
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-
     padding: 60px 0;
 
-    gap: 70px;
+   
   }
+
+//   .container {
+
+
+
+//     // ---1200
+//    display: flex;
+//     justify-content: center;
+//     align-items: baseline;
+
+//     gap: 70px;
+// }
 
   &__title {
-    text-align: start;
     margin-bottom: 20px;
-
     @include text(null, 14px, 1.14, null, $secondary-main-color);
-
     text-transform: uppercase;
+
+    text-align: start;
   }
 }
+
+// 480--
+
+// .footer-contacts {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.logo--white {
+  display: flex;
+  justify-content: center;
+}
+
+.join, .subscribe {
+  margin-top: 70px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__container {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+// --768--
+
+.footer-address-join {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.join {
+  margin: 0;
+}
+
+
+// --1200--
+
+// .container {
+
+
+
+//     // ---1200
+//    display: flex;
+//     justify-content: center;
+//     align-items: baseline;
+
+//     gap: 70px;
+// }

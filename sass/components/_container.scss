@@ -4,10 +4,10 @@
   margin: 0 auto;
 
   @include mobile {
-    width: 480px; 
+    width: 480px;
   }
 
-   @include tablet {
+  @include tablet {
     width: 768px;
   }
 

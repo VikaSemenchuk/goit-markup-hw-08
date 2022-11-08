@@ -1,6 +1,6 @@
 .address__footer {
   margin-top: 20px;
-  margin-left: auto;
+  // margin-left: auto;
 
   min-width: 231px;
 }
@@ -18,4 +18,23 @@
 
 .address-list__link--white {
   color: $secondary-main-color;
+}
+
+
+// 480----
+
+.address__footer {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+  // margin-left: auto;
+
+  min-width: 231px;
+}
+
+.address-list {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
 }
