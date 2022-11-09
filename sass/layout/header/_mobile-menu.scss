@@ -1,0 +1,150 @@
+.menu-mob__open-btn {
+  display: flex;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mob {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+.mob-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 25px;
+  margin: 0 auto;
+  height: 100%;
+  overflow: auto;
+
+  @include mobile {
+    padding: 48px 40px;
+  }
+}
+
+.mob__close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  top: 10px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  color: $main-color;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    outline-color: $accent-color;
+  }
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+  }
+}
+.mob__close-icon {
+  fill: currentcolor;
+}
+
+.menu-mob {
+  margin-bottom: 70px;
+}
+.menu-mob__item:not(:last-child),
+.mob-contacts__item:not(:last-child) {
+  margin-bottom: 28px;
+
+  @include mobile {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-mob__link {
+  position: relative;
+  @include text(500, 32px, 1.17, 0.02em, $main-color);
+
+  @include mobile {
+    @include text(500, 40px, 1.17, 0.02em, $main-color);
+  }
+  text-decoration: none;
+  // made var for line-height, or mixin
+  &:hover,
+  &:focus {
+    width: 100%;
+    border-bottom: 4px solid $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.current {
+  color: $accent-color;
+}
+
+.mob-contacts {
+  margin-bottom: 58px;
+
+  @include mobile {
+    margin-bottom: 64px;
+  }
+}
+
+.mob-contacts__link {
+  @include text(500, 20px, 1.17, 0.02em, $text-color);
+  text-decoration: none;
+}
+
+.tel {
+  @include text(500, 28px, 1.17, 0.02em, $accent-color);
+  /* 40px*/
+}
+.mob-social {
+  display: flex;
+  gap: 20px;
+}
+.mob-social__item {
+  position: relative;
+}
+
+.mob-social__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  width: 1px;
+  height: 22px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-social__link {
+  @include text(500, 12px, 1.22, 0.02em, $accent-color);
+  /* identical to box height, or 22px */
+  @include mobile {
+  @include text(500, 18px, 1.22, 0.02em, $accent-color);
+
+  }
+}

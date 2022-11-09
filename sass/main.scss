@@ -19,7 +19,8 @@
 @import './components/modal/modal';
 @import './components/modal/details-form';
 
-@import './layout/header';
+@import './layout/header/header';
+@import "./layout/header/mobile-menu";
 @import './layout/hero';
 @import './layout/features';
 @import './layout/gallery';
