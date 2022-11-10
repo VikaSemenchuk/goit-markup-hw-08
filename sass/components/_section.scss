@@ -1,22 +1,18 @@
 .section {
   padding: 60px 0;
 
+  @include desktop {
+    padding: 94px 0;
+  }
+
   &__title {
     margin-bottom: 30px;
-
     text-align: center;
-
     font-size: 28px;
     line-height: 1.18;
     // 33px
-  }
-}
 
-@include desktop {
-  .section {
-    padding: 94px 0;
-
-    &__title {
+    @include desktop {
       margin-bottom: 50px;
       font-size: 36px;
       line-height: 1.16;

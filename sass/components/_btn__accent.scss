@@ -2,9 +2,13 @@
   display: block;
   margin: 0 auto;
   height: 50px;
-
+  
   font-family: inherit;
-  @include text(700, 16px, 1.88, 0.06em, $secondary-main-color);
+  @include text(600, 14px, 1.88, 0.06em, $secondary-main-color);
+
+  @include mobile {
+    @include text(700, 16px, 1.88, 0.06em, $secondary-main-color);
+  }
 
   border-radius: 4px;
   border: none;

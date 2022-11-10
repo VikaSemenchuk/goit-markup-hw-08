@@ -3,21 +3,7 @@
 
   &__container {
     padding: 60px 0;
-
-   
   }
-
-//   .container {
-
-
-
-//     // ---1200
-//    display: flex;
-//     justify-content: center;
-//     align-items: baseline;
-
-//     gap: 70px;
-// }
 
   &__title {
     margin-bottom: 20px;
@@ -26,56 +12,60 @@
 
     text-align: start;
   }
+
+  .container {
+    @include desktop {
+      display: flex;
+    }
+  }
 }
-
-// 480--
-
-// .footer-contacts {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .logo--white {
   display: flex;
   justify-content: center;
+
+  @include desktop {
+    justify-content: flex-start;
+  }
 }
 
-.join, .subscribe {
+.join,
+.subscribe {
   margin-top: 70px;
-      display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  @include desktop {
+  align-items: flex-start;
+
+  }
 }
 
 .form__container {
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
 }
-
-// --768--
 
 .footer-address-join {
-  display: flex;
-  justify-content: space-around;
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      justify-content: space-around;
 
+      .join {
+        margin: 0;
+      }
+    }
+  }
+
+  @include desktop {
+      display: flex;
+      justify-content: start;
+      align-items: baseline;
+
+      gap: 70px;
+  }
 }
-
-.join {
-  margin: 0;
-}
-
-
-// --1200--
-
-// .container {
-
-
-
-//     // ---1200
-//    display: flex;
-//     justify-content: center;
-//     align-items: baseline;
-
-//     gap: 70px;
-// }
