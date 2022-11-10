@@ -1,15 +1,23 @@
-.modal { 
+.modal {
   position: absolute;
-
-  padding: 40px;
-
+  padding: 40px 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  width: 300px;
+  height: 590px;
 
+  @include mobile {
+    padding: 40px;
+    width: 450px;
+    height: 609px;
+  }
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
   background-color: $main-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -52,22 +60,16 @@
     margin-bottom: 12px;
 
     text-align: center;
-    @include text(700, 20px, 1.15, null, null);
+    @include text(600, 16px, 1.15, null, null);
+
+    @include mobile {
+      @include text(700, 20px, 1.15, null, null);
+    }
   }
 }
 
 .modal__icon-close {
-      fill: currentColor;
-    }
+  fill: currentColor;
+}
 
-
-    // --768--
-
-    .modal {
-      width: 450px;
-      height: 609px;
-    }
-
-    .checkbox__text {
-      font-size: 12px;
-    }
+// --768--

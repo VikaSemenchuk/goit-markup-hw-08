@@ -12,7 +12,15 @@
 
 .checkbox__text {
   @extend %aligner;
-  @include text(null, null, 1.71, null, $text-color);
+  @include text(null, 8px, 1.71, null, $text-color);
+
+  @include mobile {
+  @include text(null, 12px, 1.71, null, $text-color);
+  }
+  
+@include desktop {
+  @include text(null, 14px, 1.71, null, $text-color);
+  }
 
   cursor: pointer;
 
