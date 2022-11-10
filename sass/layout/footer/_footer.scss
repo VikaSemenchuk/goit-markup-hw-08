@@ -3,6 +3,8 @@
 
   &__container {
     padding: 60px 0;
+
+
   }
 
   &__title {
@@ -38,6 +40,7 @@
 
 
   @include desktop {
+    margin: 0;
   align-items: flex-start;
 
   }

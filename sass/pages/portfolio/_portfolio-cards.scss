@@ -29,16 +29,29 @@
 .cards-list__item {
   margin-top: $gap;
   margin-left: $gap;
+  flex-basis: calc(100% - $gap);
 
+  @include tablet {
+  flex-basis: calc(100% / 2 - $gap);
+  }
+
+@include desktop {
   flex-basis: calc(100% / 3 - $gap);
+}
 }
 
 .cards-link__box {
+  display: flex;
+  justify-content: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
 
+  @include desktop {
   width: 370px;
-  height: 294px;
+
+  }
+  // height: 294px;
 
   &:hover .overlay {
     transform: translateX(0);

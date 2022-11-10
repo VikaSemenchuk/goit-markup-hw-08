@@ -12,7 +12,7 @@
   margin: -1px;
 }
 
-.filter-list, .navigation, .header__container, .modal__close-btn, .checkbox__text span, .checkbox__text, .social__link,
+.navigation, .header__container, .modal__close-btn, .checkbox__text span, .checkbox__text, .social__link,
 .footer-soc-link, .social {
   display: flex;
   align-items: center;
@@ -1006,6 +1006,7 @@ body {
 @media screen and (min-width: 1200px) {
   .join,
 .subscribe {
+    margin: 0;
     align-items: flex-start;
   }
 }
@@ -1145,9 +1146,20 @@ body {
 }
 
 .filter-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 326px;
   margin: 0 auto;
   margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .filter-list__btn {
@@ -1199,14 +1211,30 @@ body {
 .cards-list__item {
   margin-top: 30px;
   margin-left: 30px;
-  flex-basis: calc(33.3333333333% - 30px);
+  flex-basis: calc(100% - 30px);
+}
+@media screen and (min-width: 768px) {
+  .cards-list__item {
+    flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-list__item {
+    flex-basis: calc(33.3333333333% - 30px);
+  }
 }
 
 .cards-link__box {
+  display: flex;
+  justify-content: center;
   position: relative;
   overflow: hidden;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .cards-link__box {
+    width: 370px;
+  }
 }
 .cards-link__box:hover .overlay {
   transform: translateX(0);

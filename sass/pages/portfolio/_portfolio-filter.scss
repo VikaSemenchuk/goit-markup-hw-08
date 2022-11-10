@@ -1,5 +1,15 @@
 .filter-list {
-  @extend %aligner;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 326px;
+
+
+  @include tablet {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  }
 
   margin: 0 auto;
   margin-bottom: 50px;
