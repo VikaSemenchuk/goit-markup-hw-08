@@ -82,6 +82,14 @@
     }
   }
 
+  .contacts__link {
+    font-size: 12px;
+    
+    @include desktop {
+      font-size: 14px;
+    }
+  }
+
   .contacts {
     @include tablet {
       display: flex;
